@@ -12,9 +12,11 @@ import Loc._
 /**
  * A class that's instantiated early and run.  It allows the application
  * to modify lift's environment
- */
+*/
+
 class Boot {
   def boot {
+
     // where to search for snippets
     LiftRules.addToPackages("code")
 
@@ -25,7 +27,8 @@ class Boot {
       // more complex because this menu allows anything in the
       // /static path to be visible
       Menu(Loc("Static", Link(List("static"), true, "/static/index"), 
-	       "Static Content")))
+        "Static Content"))
+    )
 
     // set the sitemap.  Note if you don't want access control for
     // each page, just comment this line out.
