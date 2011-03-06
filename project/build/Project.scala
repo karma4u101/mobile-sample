@@ -1,6 +1,8 @@
 import sbt._
 
-class Project(info: ProjectInfo) extends DefaultWebProject(info) {
+import net.usersource.jettyembed._
+
+class Project(info :ProjectInfo) extends JettyEmbedWebProject(info, JETTY7) {
 
   val liftVersion = "2.3-SNAPSHOT"
 
