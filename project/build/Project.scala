@@ -4,7 +4,7 @@ import net.usersource.jettyembed._
 
 class Project(info :ProjectInfo) extends JettyEmbedWebProject(info, JETTY7) {
 
-  val liftVersion = "2.3-SNAPSHOT"
+  val liftVersion = "2.4-SNAPSHOT"
 
   // uncomment the following if you want to use the snapshot repo
   val scalatoolsSnapshot = ScalaToolsSnapshots
