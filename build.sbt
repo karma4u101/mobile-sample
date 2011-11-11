@@ -1,4 +1,4 @@
-name := "Blank"
+name := "mobile-sample"
 
 version := "0.1.0"
 

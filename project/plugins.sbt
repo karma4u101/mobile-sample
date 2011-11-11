@@ -1,3 +1,13 @@
 resolvers += "Web plugin repo" at "http://siasia.github.com/maven2"
 
 libraryDependencies <+= sbtVersion(v => "com.github.siasia" %% "xsbt-web-plugin" % (v+"-0.2.3"))
+
+resolvers += {
+  val typesafeRepoUrl = new java.net.URL("http://repo.typesafe.com/typesafe/releases")
+  val pattern = Patterns(false, "[organisation]/[module]/[sbtversion]/[revision]/[type]s/[module](-[classifier])-[revision].[ext]")
+  Resolver.url("Typesafe Repository", typesafeRepoUrl)(pattern)
+}
+
+resolvers += Classpaths.typesafeResolver
+
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse" % "1.4.0")
