@@ -17,12 +17,12 @@ object Mobile {
 
   def mobile_?(f:(() => Boolean)) = f()
 
-  def isMobile(in:NodeSeq):NodeSeq = {
+  def mobile(in:NodeSeq):NodeSeq = {
     val info = getUAgentInfo
     if(mobile_?(info.detectMobileLong)) in else NodeSeq.Empty
   }
 
-  def isFull(in:NodeSeq):NodeSeq = {
+  def full(in:NodeSeq):NodeSeq = {
     val info = getUAgentInfo
     if(!mobile_?(info.detectMobileLong)) in else NodeSeq.Empty
   }
