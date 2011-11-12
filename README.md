@@ -1,7 +1,7 @@
 Dynamic Template Invocation
 ===========================
 
-This Scala/Lift basic assembly example demonstration dynamic template invocation by choose between a fictional "mobile" and "full" surround template depending on some condition.    
+This Scala/Lift basic assembly example demonstration dynamic template invocation by choosing between a fictional "mobile" and "full" surround template depending on some condition.    
 This is a fork originates from this discussion http://groups.google.com/group/liftweb/browse_thread/thread/bdb91101ac9e5960    
 
 Quick Start
