@@ -7,13 +7,14 @@ import scala.util.Random
 class TemplateSelector extends StatefulSnippet {
 
   def dispatch = {
-    case "selector" => selector
+    case "select" => select
   }
     
-  def selector = {
+  def select = {
     "#main [class]" #> someLogicForSelectingTemplate()
   }
   
+  /*Demonstrating with random selection */
   def someLogicForSelectingTemplate() = {
     if(Random.nextBoolean()){
       "lift:surround?with=mobile;at=main"
